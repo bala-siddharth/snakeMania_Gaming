@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.container-fluid{
+    max-width: 1440px;
+}
+.snake-container{
+    background-image: url("bg_img.jpeg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.elgible-screen{
+    display: none;
+}
+@media screen and (max-width:767px){
+    .snake-container{
+        display: none;
+    }
+    .elgible-screen{
+        display: block;
+        font-size: xx-large;
+        text-align: center;
+        padding-top: 300px;
+    }
+}
+.type-of-speed-container{
+    display: flex;
+    flex-direction: column;
+}
+.type-of-speed-container .btn{
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    text-align: left;
+}
+.type-of-speed-container .btn:hover{
+    color: #c69dda;
+    border-bottom: solid 1px #fff;
+}
+#board{
+    background: linear-gradient(black,#6c7176);
+    width: 90vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(25,1fr);
+    grid-template-columns: repeat(25,1fr);
+    border: solid 8px #c69dda;
+}
+.food{
+    background-color: rgb(216, 233, 148);
+    border: solid 1px black;
+    border-radius: 40px;
+}
+.head{
+    background-color: red;
+    transform: scale(1.02);
+}
+.snake{
+    background-color: rgb(202, 226, 238);
+    background: linear-gradient(to bottom right,#fff,rgb(122, 122, 122));
+    border: solid .15vmin black;
+    border-radius: 15px;
+}
+#scoreBox{
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+}
+#highScoreBox{
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+}
+
+
